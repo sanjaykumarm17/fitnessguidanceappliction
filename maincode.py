@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import json
 
 #-----Simple Database-----
@@ -94,3 +95,6 @@ def diet_plan():
 
     
         
+=======
+
+>>>>>>> 3747676466ab7fda3923bbc56b3c60bcedf6be68
