@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import json
 
 #-----Simple Database-----
@@ -89,12 +88,71 @@ def workout_plan():
         print("Invalid Choice !")
 
 #--------Diet------
+choice = input("Enter the choice: ")
 
 def diet_plan():
-    print
+    if diet_plan == "1":
+        print("\nDiet Plan for Fat Loss: ")
+        print("- Rice / chapati")
+        print("- Vegetables")
+        print("- white Egg / Protein")
+        print("- Fruits")
+        print("- Drink Water")
+    elif diet_plan == "2":
+        print("\nDiet Plan for Muscle Gain: ")
+        print("- 250 kgm Chicken")
+        print("- Vegetables")
+        print("- Full egg / protein")
+        print("- Milk")
+        print("- Drink Water")
 
-    
-        
-=======
+#--------Main APP-------
 
->>>>>>> 3747676466ab7fda3923bbc56b3c60bcedf6be68
+"REGISTER"
+"LOGIN"
+"CALCULATE THE BMI"
+"WORKOUT PLAN"
+"DEIT PLAN"
+"LOGOUT"
+
+#---------------------------
+
+def fitness_app():
+    while True:
+        print("\n==== Fitness App =====")
+        print("1. Reigter")
+        print("2. Login")
+        print("3. calculate BMI")
+        print("4. Workout Plan")
+        print("5. Deit Plan")
+        print("6. Logout")
+        print("7. Exit")
+
+        choice = input("Enter the choice: ")
+
+        if choice == "1":
+            user = register()
+            if user:
+                fitness_app(user)
+
+        elif choice == "2":
+            user = login()
+            if user:
+                fitness_app(user)
+
+        elif choice == "3":
+            calculate_bmi()
+        elif choice == "4":
+            workout_plan()
+        elif choice == "5":
+            diet_plan()
+        elif choice == "6":
+            print("Logged Out !")
+        elif choice == "7":
+            print("Exit")
+            break
+        else:
+            print("Invalid choice !")
+
+if __name__ == "__fitness_app":
+    fitness_app()
